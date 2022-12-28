@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>RememberThat</title>
+    <link
+      rel="stylesheet"
+      href="./css/main.css"
+    />
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="container">
+        <a
+          class="logo"
+          href="index.html"
+          >Remember<span>That</span></a
+        >
+
+        <img
+          class="mobile-menu"
+          id="mobile-cta"
+          src="./images/menu.svg"
+          alt="open navigation menu"
+        />
+
+        <nav>
+          <img
+            class="mobile-menu-exit"
+            id="mobile-exit"
+            src="./images/exit.svg"
+            alt="close navigation menu"
+          />
+          <ul class="primary-nav">
+            <li class="current"><a href="#">Home</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Pricing</a></li>
+          </ul>
+
+          <ul class="secondary-nav">
+            <li><a href="#">Contact</a></li>
+            <li class="go-premium-cta"><a href="#">Go Premium</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <section class="hero">
+      <div class="container">
+        <div class="left-col">
+          <p class="subhead">It's Nitty & Gritty</p>
+          <h1>A Task App That Doesn't Stink</h1>
+
+          <div class="hero-cta">
+            <a
+              href="#"
+              class="primary-cta"
+              >Try for free</a
+            >
+            <a
+              href="#"
+              class="watch-video-cta"
+            >
+              <img
+                src="./images/watch.svg"
+                alt="watch a video"
+              />Watch a video
+            </a>
+          </div>
+        </div>
+
+        <img
+          src="./images/illustration.svg"
+          class="hero-img"
+          alt="an illustration"
+        />
+      </div>
+    </section>
+
+    <section class="features-section">
+      <div class="container">
+        <ul class="features-list">
+          <li>Unlimited Tasks</li>
+          <li>SMS Task Reminders</li>
+          <li>Confetti Explosions Upon Task Completions</li>
+          <li>Social Media Announcements</li>
+          <li>Real Time Collaboration</li>
+          <li>Other Awesome Features!</li>
+        </ul>
+
+        <img
+          src="./images/holding-phone.jpg"
+          alt="picture of a man holding phone"
+        />
+      </div>
+    </section>
+
+    <section class="testimonials-section">
+      <div class="container">
+        <ul>
+          <li>
+            <img src="./images/person.jpg" />
+            <blockquote>
+              "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi
+              natus possimus similique quis. Deserunt provident molestiae
+              accusantium eveniet exercitationem? Natus?"
+            </blockquote>
+            <cite>- Jane Doe</cite>
+          </li>
+          <li>
+            <img src="./images/person.jpg" />
+            <blockquote>
+              "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi
+              natus possimus similique quis. Deserunt provident molestiae
+              accusantium eveniet exercitationem? Natus?"
+            </blockquote>
+            <cite>- Jane Doe</cite>
+          </li>
+          <li>
+            <img src="./images/person.jpg" />
+            <blockquote>
+              "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi
+              natus possimus similique quis. Deserunt provident molestiae
+              accusantium eveniet exercitationem? Natus?"
+            </blockquote>
+            <cite>- Jane Doe</cite>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="contact-section">
+      <div class="container">
+        <div class="contact-left">
+          <h2>Contact</h2>
+
+          <form action="">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+            />
+
+            <label for="message">Message</label>
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+            ></textarea>
+
+            <input
+              type="submit"
+              value="Send Message"
+              class="send-message-cta"
+            />
+          </form>
+        </div>
+
+        <div class="contact-right">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52860.7450339605!2d-118.44956478335016!3d34.10035165511612!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2bc35fbd217ef%3A0xcf1ef9352700d95c!2sBeverly%20Hills%2C%20Kaliforniya%2090210%2C%20Amerika%20Birle%C5%9Fik%20Devletleri!5e0!3m2!1str!2str!4v1671989158848!5m2!1str!2str"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const mobileBtn = document.getElementById("mobile-cta");
+      const mobileBtnExit = document.getElementById("mobile-exit");
+      const nav = document.querySelector("nav");
+
+      mobileBtn.addEventListener("click", () => {
+        nav.classList.add("menu-btn");
+      });
+
+      mobileBtnExit.addEventListener("click", () => {
+        nav.classList.remove("menu-btn");
+      });
+    </script>
+  </body>
+</html>
